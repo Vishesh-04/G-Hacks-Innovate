@@ -1,0 +1,614 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hack With GDG</title>
+  <link rel="icon" href="images\favicon.ico" type="image/x-icon">
+  <!-- Optional: You can also provide a PNG version of your favicon for better compatibility -->
+  <link rel="shortcut icon" href="./assests/wow logo.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+</head>
+
+<body class=" h-screen bg-white text-black">
+
+  <!-- Navigation Bar -->
+  <header
+    class="header flex items-center justify-between fixed w-full p-6 backdrop-filter backdrop-blur-lg bg-opacity-10 bg-black border-b border-white z-50">
+    <a href="#" class="logo"><img class="h-fit w-fit" src="2.png" alt="Logo"></a>
+    <nav class="navbar hidden md:flex space-x-4 py-8">
+      <!-- Add your nav links here -->
+    </nav>
+    <button class="btn bg-black text-white py-1.5 px-3 text-sm rounded"><a href="" target="_blank">Register</a></button>
+  </header>
+  <div class="nav-bg"></div>
+
+  <!-- Main Content -->
+  <div class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-center h-full px-10">
+    <div class="w-full md:w-1/2 text-center md:text-left mt-10">
+      <h1 class="text-4xl md:text-6xl mb-4">G-Hacks</h1>
+      <h3 class="text-2xl md:text-3xl mb-4">A 36 Hours Hackathon! <br>
+        <span class="font-bold" style="color: #f9ab00;"> { April 30-31 }</span>
+      </h3>
+      <p class="text-lg mb-6">Welcome to GDG MIET Student Chapter! A Day to show case your coding skills and Technical
+        skills!</p>
+      <button class="btn-register"><a href="" target="_blank">Register</a></button>
+    </div>
+    <div class="w-full md:w-1/2 flex justify-center md:justify-start mt-10">
+      <img src="2.png" alt="Event Image" class="h-120 w-120 md:h-150 md:w-150 mb-4 md:mb-0">
+    </div>
+  </div>
+
+  <!-- Countdown Section -->
+  <section class="countdown-section mb-6">
+    <div class="wrapper">
+      <h1 class="text-center text-4xl my-10">Event Starts in</h1>
+      <div class="flex flex-col countdown grid grid-cols-2 gap-8 sm:grid-cols-4">
+        <ul class="countdown">
+          <li><span id="days">0</span>days</li>
+          <li><span id="hours">0</span>Hours</li>
+          <li><span id="minutes">0</span>Minutes</li>
+          <li><span id="seconds">0</span>Seconds</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Registration Details Section -->
+  <section class="registration-section mt-6">
+    <div class="container mx-auto">
+      <h2 class="text-4xl md:text-6xl mb-8 text-center text-black">Registration Details</h2>
+      <div class="slider-wrapper">
+        <div class="image-list flex flex-col md:flex-row justify-center items-stretch gap-6">
+          <!-- Registration Card 1 -->
+          <div class="image-item p-6 w-full md:w-80 rounded-lg flex flex-col registration-card">
+            <h3 class="text-lg font-semibold mb-4 text-left">Team</h3>
+            <div class="text-left text-base space-y-3 flex-grow flex flex-col justify-between">
+              <p><i class="bx bx-group text-green-400"></i> Per Team</p><br>
+              <p><i class="bx bx-user-plus text-red-400"></i> Team Size : Min 1 - Max 4</p><br>
+              <p><i class="bx bx-check-circle"></i> Individual participants allowed</p>
+            </div>
+          </div>
+
+          <!-- Registration Card 2 -->
+          <div class="image-item p-6 w-full md:w-80 rounded-lg flex flex-col registration-card">
+            <h3 class="text-lg font-semibold mb-4 text-left">Food &amp; Refreshment</h3>
+            <div class="text-left text-base space-y-3 flex-grow flex flex-col justify-between">
+              <p><i class="bx bx-restaurant text-green-400"></i> April 30th - Lunch</p><br>
+              <p><i class="bx bx-moon text-yellow-400"></i> April 30th - Dinner</p><br>
+              <p><i class="bx bx-sun text-red-400"></i> April 31st - Breakfast</p><br>
+            </div>
+          </div>
+
+          <!-- Registration Card 3 -->
+          <div class="image-item p-6 w-full md:w-80 rounded-lg flex flex-col registration-card">
+            <h3 class="text-lg font-semibold mb-4 text-left">Prize</h3>
+            <div class="text-left text-base space-y-3 flex-grow flex flex-col justify-between">
+              <p><i class="bx bx-trophy text-yellow-400"></i> Exciting Prize pool worth</p>
+              <p><i class="bx bx-money text-blue-400"></i> ₹50,000</p>
+              <p class="register-now flex items-center">
+                <i class="bx bx-check-circle text-green-500 mr-2"></i>
+                <span>Participants receive Google certificates</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about-section mt-6">
+    <div class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-center h-full px-10">
+      <div class="w-full md:w-1/2 text-center md:text-left">
+        <h2 class="text-4xl md:text-6xl mb-4">About G-Hacks</h2>
+        <p class="text-lg mb-6">Hey!! Devs, Here's Hack with GDG MIET student chapter. G-Hack is where all the
+          developers and web2 enthusiasts join us in the 32 Hours Hackathon with more quests and events along. Isn't it
+          a great opportunity for networking with others!!?</p>
+      </div>
+
+      <div class="w-full md:w-1/2 flex justify-center md:justify-start">
+        <img src="2.png" alt="About Image" class="h-120 w-120 md:h-120 mx-8 md:w-120 md:mb-0 about-img">
+        <!-- Use h-60 and w-60 for mobile view -->
+      </div>
+    </div>
+  </section>
+
+
+  <section class="agenda-section mt-6">
+
+    <div class="container mx-auto">
+      <h2 class="text-4xl md:text-6xl mb-8 text-center text-black">Agenda</h2>
+      <div class="slider-wrapper relative">
+        <button id="prev-slide" class="slide-button material-symbols-rounded" style="display: none;">
+          chevron_left
+        </button>
+        <ul class="image-list flex overflow-x-auto">
+          <!-- Add your agenda items here -->
+          <li class="image-item bg-red-400 p-6 flex-none">
+            <p class="text-2xl font-bold">10:00 - 11:00 AM</p>
+            <p class="text-2xl font-bold">Day 1</p>
+            <h3 class="mt-2 pt-2 text-white">Inaugration of Hack With GDG Season 2</h3>
+          </li>
+
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">11:00 – 1:00 PM</p>
+            <p class="text-2xl font-bold">Day 1</p>
+            <h3 class="mt-2 pt-2 text-white">Beginning of Hackathon </h3>
+
+          </li>
+
+          <li class="image-item bg-blue-400 p-6 flex-none">
+            <p class="text-2xl font-bold">1:00 - 2:00 PM</p>
+            <p class="text-2xl font-bold">Day 1</p>
+            <h3 class="mt-2 pt-2 text-white">Lunch Break</h3>
+          </li>
+
+          <li class="image-item bg-yellow-400 p-6 flex-none">
+            <p class="text-2xl font-bold">2:00 - 3:30 PM</p>
+            <p class="text-2xl font-bold">Day 1</p>
+            <p class="mt-2 pt-2 text-white">Hackathon Continues </p>
+          </li>
+
+          <li class="image-item bg-red-400 p-6 flex-none">
+            <p class="text-2xl font-bold">3:30 – 5:00 PM</p>
+            <p class="text-2xl font-bold">Day 1</p>
+            <p class="mt-2">Code Combat (Optional Event)</p>
+          </li>
+
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">5:00 – 6:00 PM</p>
+            <p class="text-2xl font-bold">Day 1</p>
+            <p class="mt-2">Evaluation 1</p>
+          </li>
+
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">6:00 – 6:30 PM</p>
+            <p class="text-2xl font-bold">Day 1</p>
+            <p class="mt-2">Refreshment | Snacks | Short Break</p>
+          </li>
+
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">6:30 – 7:30 PM</p>
+            <p class="text-2xl font-bold">Day 1</p>
+            <p class="mt-2">Workshop </p>
+          </li>
+
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">7:30 – 8:30 PM</p>
+            <p class="text-2xl font-bold">Day 1</p>
+            <p class="mt-2">Cyber Quest (Optional Event)</p>
+          </li>
+
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">8:30 – 9:30 PM</p>
+            <p class="text-2xl font-bold">Day 1</p>
+            <p class="mt-2">Dinner </p>
+          </li>
+
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">9:30 PM</p>
+            <p class="text-2xl font-bold">Day 1</p>
+            <p class="mt-2">Hackathon Continues...</p>
+          </li>
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">5:30 – 6:00 AM</p>
+            <p class="text-2xl font-bold">Day 2</p>
+            <p class="mt-2">Refreshment | Snacks | Break </p>
+          </li>
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">6:00 – 7:00 AM</p>
+            <p class="text-2xl font-bold">Day 2</p>
+            <p class="mt-2">Hackathon Continues...</p>
+          </li>
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">7:00 – 8:00 AM</p>
+            <p class="text-2xl font-bold">Day 2</p>
+            <p class="mt-2">Evaluation 2</p>
+          </li>
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">8:00 – 9:00 AM</p>
+            <p class="text-2xl font-bold">Day 2</p>
+            <p class="mt-2">Breakfast</p>
+          </li>
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">9:00 – 11:00 AM</p>
+            <p class="text-2xl font-bold">Day 2</p>
+            <p class="mt-2">Hackathon Continues...</p>
+          </li>
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">11:00 AM</p>
+            <p class="text-2xl font-bold">Day 2</p>
+            <p class="mt-2">Hackathon Ends</p>
+          </li>
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">12:00 PM</p>
+            <p class="text-2xl font-bold">Day 2</p>
+            <p class="mt-2">Results Announcement</p>
+          </li>
+
+        </ul>
+        <button id="next-slide" class="slide-button material-symbols-rounded" style="display: flex;">
+          chevron_right
+        </button>
+      </div>
+      <div class="slider-scrollbar">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb" style="left: 0px;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Section -->
+  <section class="event-section mt-6">
+    <div class="container mx-auto">
+      <h2 class="text-4xl md:text-6xl mb-8 text-center text-white">Event</h2>
+      <div class="slider-wrapper relative">
+        <ul class="event-image-list flex justify-center items-stretch flex-wrap gap-6">
+          <!-- Add your event items here -->
+          <li class="image-item p-6 flex-none w-full md:w-80 rounded-lg flex flex-col">
+            <h1 class="text-2xl font-bold mb-4 text-left">Code Combat</h1>
+            <div class="text-left text-sm space-y-3">
+              <p><i class="bx bx-time-five text-red-400"></i> Intense 24-hour coding hackathon</p><br>
+              <p><i class="bx bx-world text-blue-400"></i> Solve real-world problems collaboratively</p><br>
+              <p><i class="bx bx-trophy text-yellow-400"></i> Compete for exciting prizes</p><br>
+              <p><i class="bx bx-user-circle text-green-400"></i> Thrilling challenge for all skill levels</p><br>
+            </div>
+          </li>
+
+          <li class="image-item p-6 flex-none w-full md:w-80 rounded-lg flex flex-col">
+            <h1 class="text-2xl font-bold mb-4 text-left">CyberQuest</h1>
+            <div class="text-left text-sm space-y-3">
+              <p><i class="bx bx-flag text-yellow-400"></i> Exciting CTF event for all skill levels</p><br>
+              <p><i class="bx bx-code-alt text-blue-400"></i> Challenges in cryptography, web security, and forensics
+              </p><br>
+              <p><i class="bx bx-trophy text-green-400"></i> Test skills, climb leaderboard, become cyber champion</p>
+              <br>
+            </div>
+          </li>
+
+          <li class="image-item p-6 flex-none w-full md:w-80 rounded-lg flex flex-col">
+            <h1 class="text-2xl font-bold mb-4 text-left">TechTalks</h1>
+            <div class="text-left text-sm space-y-3">
+              <p><i class="bx bx-microphone text-red-400"></i> Inspiring presentations from industry experts</p><br>
+              <p><i class="bx bx-brain text-blue-400"></i> Topics: AI, blockchain, emerging tech trends</p><br>
+              <p><i class="bx bx-network-chart text-yellow-400"></i> Network with like-minded tech enthusiasts</p><br>
+              <p><i class="bx bx-bulb text-green-400"></i> Gain insights into future innovations</p><br>
+            </div>
+          </li>
+
+          <!-- Add more event items as needed -->
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Speaker Section  -->
+
+  <section class="sponsor-section mt-6 mb-8">
+    <div class="container mx-auto">
+      <h2 class="text-4xl md:text-6xl mb-8 text-center text-white">Core Team</h2>
+      <div class="slide-wrapper relative">
+        <button id="prev-slid" class="slid-button material-symbols-rounded">
+          chevron_left
+        </button>
+        <ul class="image-list flex overflow-x-auto">
+          <!-- Add your agenda items here -->
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a
+              href="https://www.linkedin.com/in/vikash-t-designer?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"><img
+                src="images\gdgoncampusorgnizer.jpeg" alt="Vikash Thirumurugan" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg text-white font-semibold">Harshit Goel</h1>
+          </li>
+
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a
+              href="https://www.linkedin.com/in/kavin-raj-602802257?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"><img
+                src="images\managementgdg.jpeg" alt="Kavinraj" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg text-white font-semibold">Vishesh Jindal</h1>
+          </li>
+
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a
+              href="https://www.linkedin.com/in/tharun-s-b5521228a?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"><img
+                src="images\technicallead.jpeg" alt="Tharun" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold text-white">Himanshu Kumar</h1>
+          </li>
+
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a
+              href="https://www.linkedin.com/in/rathish-kumar-62a8a1255?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"><img
+                src="images\nontechnicallead.jpeg" alt="Rathishkumar" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold text-white">Kunj Aggarwal</h1>
+          </li>
+
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a
+              href="https://www.linkedin.com/in/chandrapradeep-r-017033291?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"><img
+                src="images\webdevelopmentteamlead.jpeg" alt="Chandrapradeep" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold text-white">Palak Singhal</h1>
+          </li>
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a
+              href="https://www.linkedin.com/in/gowrishankar-m-n-892b87257?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"><img
+                src="images\appdevelopmentteamlead.jpeg" alt="Gowrishankar" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">Gowrishankar</h1>
+          </li>
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a
+              href="https://www.linkedin.com/in/pooja-n-87799b28b?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"><img
+                src="images\competitiveprogramminglead.jpeg" alt="pooja" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">Pooja</h1>
+          </li>
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a href=""><img src="images\Tharunya.jpg" alt="Tharunya" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">Tharunya</h1>
+          </li>
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a
+              href="https://www.linkedin.com/in/divyadharshini-bharaniraj?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"><img
+                src="images\aimlteamlead'.jpeg" alt="divyadharshini" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">Divyadharshini</h1>
+          </li>
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a
+              href="https://www.linkedin.com/in/dhanushkumar-m-6184a328b?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"><img
+                src="images\cybersecuritylead.jpeg" alt="DhanushKumar" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">DhanushKumar</h1>
+          </li>
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a
+              href="https://www.linkedin.com/in/yugesh-saravanan-7985b8290?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"><img
+                src="images\UIUXteamlead.jpeg" alt="Yugesh" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">Yugesh</h1>
+          </li>
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a
+              href="https://www.linkedin.com/in/kishore-kumar-298658258?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=android_app"><img
+                src="images\Graphicdesignlead.jpeg" alt="Kishore kumar" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">kishore Kumar</h1>
+          </li>
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a href="https://in.linkedin.com/in/boopesh-m-97b72328b"><img src="images\multimeaditeamlead.jpeg"
+                alt="Boopesh" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">Boopesh</h1>
+          </li>
+
+        </ul>
+        <button id="next-slid" class="slid-button material-symbols-rounded">
+          chevron_right
+        </button>
+      </div>
+      <div class="slide-scrollbar">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb" style="left: 0px;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Duplicated Speakers Section -->
+  <section class="duplicated-sponsor-section mt-6 mb-8">
+    <div class="container mx-auto">
+      <h2 class="text-4xl md:text-6xl mb-8 text-center text-white">Sponsors</h2>
+      <div class="duplicated-slide-wrapper relative">
+        <button id="prev-duplicated-slid" class="duplicated-slid-button material-symbols-rounded">
+          chevron_left
+        </button>
+        <ul class="duplicated-image-list flex overflow-x-auto">
+          <!-- Add your duplicated agenda items here -->
+
+          <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a class="text-white" href="https://devfolio.co/" target="_blank"><img src="images\devfolio.png" alt="Duplicated Speaker 1"
+                class="h-24 w-30 my-6 rounded-xl text-white">Devfolio</a>
+          </li>
+
+          <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a class="text-white"  href="https://polygon.technology/" target="_blank"><img src="images\Polygon.png"
+                alt="Duplicated Speaker 1" class="h-24 w-30 my-6 rounded-xl">Polygon</a>
+          </li>
+          <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a class="text-white"  href="https://aptosfoundation.org/" target="_blank"><img src="images\Aptos.png"
+                alt="Duplicated Speaker 1" class="h-24 w-30 my-6 rounded-xl">Aptos</a>
+          </li>
+
+          <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a class="text-white"  href="https://ethindia2024.devfolio.co/" target="_blank"><img src="images\EthIndia.png"
+                alt="Duplicated Speaker 1" class="h-24 w-30 my-6 rounded-xl">ETHIndia</a>
+          </li>
+          <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a class="text-white"  href="" target="_blank"><img src="images\shanthi.png" alt="Duplicated Speaker 1"
+                class="h-24 w-30 my-6 rounded-xl">Shanti's Home Kitchen</a>
+          </li>
+          <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a class="text-white"  href="https://greenterraindia.com/reverse-osmosis-plant/" target="_blank"><img
+                src="images\greenterra.png" alt="Duplicated Speaker 1" class="h-24 w-30 my-6 rounded-xl">Green Terra</a>
+          </li>
+          <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a class="text-white"  href="https://flatlogic.com/" target="_blank"><img src="images\flatlogic.png" alt="Duplicated Speaker 1"
+                class="h-24 w-30 my-6 rounded-xl">Flatlogic</a>
+          </li>
+          <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a class="text-white"  href="https://gen.xyz/" target="_blank"><img src="images\xyz.png" alt="Duplicated Speaker 1"
+                class="h-24 w-30 my-6 rounded-xl">.xyz</a>
+          </li>
+          <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a class="text-white"  href="https://proto.io/" target="_blank"><img src="images\proto.png" alt="Duplicated Speaker 1"
+                class="h-24 w-30 my-6 rounded-xl">proto.io</a>
+          </li>
+          <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a class="text-white"  href="https://incogni.com/" target="_blank"><img src="images\Incogni.png" alt="Duplicated Speaker 1"
+                class="h-24 w-30 my-6 rounded-xl">Incogni</a>
+          </li>
+          <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a class="text-white"  href="https://nordpass.com/" target="_blank"><img src="images\NordPass.png" alt="Duplicated Speaker 1"
+                class="h-24 w-30 my-6 rounded-xl">NordPass</a>
+          </li>
+          <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a class="text-white"  href="https://nordvpn.com/" target="_blank"><img src="images\NordVPN.png" alt="Duplicated Speaker 1"
+                class="h-24 w-30 my-6 rounded-xl">NordVPN</a>
+          </li>
+          <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a class="text-white"  href="https://saily.com/" target="_blank"><img src="images\Saily.png" alt="Duplicated Speaker 1"
+                class="h-24 w-30 my-6 rounded-xl">Saily</a>
+          </li>
+
+        </ul>
+        <button id="next-duplicated-slid" class="duplicated-slid-button material-symbols-rounded">
+          chevron_right
+        </button>
+      </div>
+      <div class="duplicated-slide-scrollbar">
+        <div class="duplicated-scrollbar-track">
+          <div class="duplicated-scrollbar-thumb" style="left: 0px;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="faq-section my-10">
+    <div class="container mx-auto ">
+      <h2 class="text-4xl md:text-6xl mb-8 text-center text-white">FAQ'S</h2>
+      <div class="faq-item">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>What is G-Hacks?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4  text-white rounded">
+          <p>G-Hacks is a 32-hour hackathon organized by GDG MIEt, where tech enthusiasts come together to build
+            innovative projects, collaborate, and learn new skills.</p>
+        </div>
+      </div>
+      <div class="faq-item mt-4">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left  text-white rounded">
+          <span>How can I register for G-Hacks?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 bg-black text-white rounded">
+          <p>To register for the hackathon, simply click the Register button on our website. This will redirect you to
+            the registration form. Fill out the required details, and you’ll be all set to participate in this exciting
+            event!</p>
+        </div>
+      </div>
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>Who can attend the event?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>The event is open to anyone interested in technology, including students, professionals, and industry
+            leaders. Whether you're a tech novice or an expert, there's something for everyone.</p>
+        </div>
+      </div>
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>How many members can be in a team ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>The minimum team size is 1 and the maximum team size is 4.</p>
+        </div>
+      </div>
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>Will food be provided for offline hackathon?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>Yes, food will be provided for offline hackathon participants.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>What are the selecting criteria for idea to be selected?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>Unique and innovative ideas with proper structure and workflow.</p>
+        </div>
+      </div>
+
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>What about technical events are they completely online ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>No, it is offline hackathon and there are events like codecombat and catch the flag, where hackathon
+            participants can participate in it.</p>
+        </div>
+      </div>
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>Will internet be provided in offline hackathon ?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>Yes, Wifi will be provided.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>How can I stay updated about the event?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>Follow us on our social media channels (LinkedIn, Twitter, Instagram) for the latest updates and
+            announcements.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="map-section">
+        <!-- Embed your map here -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13271.100164661737!2d77.63063102960587!3d28.973110362607517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c668fdea4d87f%3A0x8795def814a486e7!2sMeerut%20Institute%20of%20Engineering%20and%20Technology!5e1!3m2!1sen!2sin!4v1738325737617!5m2!1sen!2sin"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="details-section">
+        <h1>Google Developer Student Clubs</h1>
+        <p>Email: <a href="mailto:gdgoncampus@miet.ac.in">gdgoncampus@miet.ac.in</a></p>
+        <p>Phone(Harshit Goel): <a href="tel:+919368544008">+91 9368544008</a></p>
+        <p>Phone(Himanshu Kumar): <a href="tel:+917248158511">+91 7248158511</a></p>
+        <p>Phone(Vishesh Jindal): <a href="tel:+918630345836">+91 8630345836</a></p>
+
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/company/google-developer-groups-on-campus-meerut-institute-of-engineering-and-technology/"
+            target="_blank" aria-label="LinkedIn" class="text-blue-700 text-3xl">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="mailto:gdgoncampus@miet.ac.in" target="_blank" aria-label="Gmail" class="text-red-600 text-3xl">
+            <i class="bx bxl-gmail"></i>
+          </a>
+          <a href="https://www.instagram.com/gdg_miet/" target="_blank" aria-label="Instagram"
+            class="text-pink-600 text-3xl">
+            <i class="bx bxl-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
