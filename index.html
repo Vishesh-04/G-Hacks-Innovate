@@ -27,16 +27,16 @@
 <body class=" bg-cover bg-center bg-no-repeat" style="background-image: url(src/image/BackgroundImage.png); background-size: cover; background-position: center center;">
   <!-- Navbar Section -->
   <header
-    class='fixed justify-center flex shadow-lg sm:px-10 lg:size-fit font-[Montserrat] min-h-[70px] m-auto tracking-wide relative lg:backdrop-blur top-8 sticky lg:border-6 z-0 lg:border-red-600 lg:rounded-4xl'>
-
-    <div class='flex items-center gap-80 '>
+    class='fixed justify-center flex shadow-lg sm:px-10 lg:size-fit font-[Montserrat] min-h-[70px] m-auto tracking-wide relative lg:backdrop-blur top-8 sticky lg:border-6 z-50 lg:border-red-600 lg:rounded-4xl'>
+  
+    <div class='flex items-center lg:gap-80 gap-40'>
       <a href="/" class="lg:absolute max-lg:left-10 lg:-translate-x-1/2 lg:-translate-y-1/2 ">
         <img src="src/image/4.png" alt="logo" class='w-36 lg:hidden' />
       </a>
       <a href="/" class="hidden max-sm:block">
         <img src="src/image/4.png" alt="logo" class='w-36' />
       </a>
-
+  
       <div id="collapseMenu"
         class='max-lg:hidden lg:!block w-full max-lg:fixed max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50  lg:justify-evenly sm:justify-between'>
         <button id="toggleClose"
@@ -50,13 +50,13 @@
               data-original="#000000"></path>
           </svg>
         </button>
-
+  
         <ul
           class='lg:flex lg:gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-black max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50'>
-          <!-- <li class='mb-6 hidden max-lg:block'>
-            <a href="javascript:void(0)"><img src="src/image/4.png" alt="logo" class='w-36' />
-            </a>
-          </li> -->
+          <li class='mb-6 hidden max-lg:block'>
+              <a href="javascript:void(0)"><img src="src/image/4.png" alt="logo" class='w-36' />
+              </a>
+            </li>
           <li class='max-lg:border-b py-4 px-3'><a href='#about'
               class='hover:text-red-500 text-white block font-semibold text-[15px]'>About</a>
           </li>
@@ -102,19 +102,19 @@
               <div data-popper-arrow></div>
             </div>
           </li>
-
+  
         </ul>
-
+  
       </div>
-
-
+  
+  
       <button id="toggleOpen" class='lg:hidden md:ps-48 xs:ps-24'>
         <svg class="w-7 h-7" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd"
             d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
             clip-rule="evenodd"></path>
         </svg>
-
+  
       </button>
     </div>
     </div>
@@ -123,7 +123,7 @@
   <section id="hero" class="inset-0 flex justify-center items-center h-screen ">
     <div class="absolute flex flex-col items-center text-center mx-auto lg:flex-row-reverse lg:max-w-5xl xl:max-w-6xl">
       <div class="lg:w-1/2 lg:h-auto">
-        <img class="h-full w-full object-cover object-fill scale-110 m-auto" src="src/image/hero1.png"
+        <img class="h-full w-full object-cover object-fill scale-110" src="src/image/hero1.png"
           alt="Winding mountain road">
       </div>
       <div>
@@ -166,7 +166,7 @@
       <div class="flex items-center justify-center p-2">
         <div class="max-w-screen-xl w-full sm:flex items-center text-center sm:text-left">
           <!-- Image Section -->
-          <div class="sm:w-1/2 flex justify-center pb-4">
+          <div class="sm:w-1/2 flex justify-center">
             <div class="image object-center border-4 border-red-600 rounded-2xl">
               <img src="src/image/about.png"
                 class="mx-auto w-full max-w-sm sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl rounded-2xl">
